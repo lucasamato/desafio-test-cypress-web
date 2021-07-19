@@ -1,4 +1,4 @@
-# Deafio automação de testes web com Cypress
+# Desafio automação de testes Web com Cypress
 
 ## Test Strategy
 
@@ -24,7 +24,9 @@ https://www.npmjs.com/package/cypress-cucumber-preprocessor
 
 ## Page Objects
 
-* Os elementos das páginas que foram utilizados nos testes estão no caminho **cypress/support/pages/elements.js**
+* Os elementos das páginas que foram utilizados nos testes estão no caminho **cypress/support/pages/elements.js** 
+eles foram importadas e para a pasta commands onde foram criados comandos personalizados que foram utilizados nos testes
+facilitando assim o reaproveitamento de cógido e manutenabilidade do projeto
 
 ## Covered sceneries
 
