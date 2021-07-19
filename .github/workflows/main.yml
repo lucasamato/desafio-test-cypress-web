@@ -43,7 +43,7 @@ jobs:
       - run: npm run cy:run:cucumber
       
       # Gerar o relatório Cucumber report
-      - run: nom run report:cucumber
+      - run: npm run report:cucumber
       
       # Publicar relatório em html no gitlab Pages
       - name: Deploy to GithubPages
