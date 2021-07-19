@@ -1,0 +1,93 @@
+[
+  {
+    "description": "    Como usuario do ecommerce, desejo adicionar produtos ao carrinho de compra",
+    "keyword": "Feature",
+    "name": "Carrinho de compra",
+    "line": 1,
+    "id": "carrinho-de-compra",
+    "tags": [],
+    "uri": "Carrinhodecompra.feature",
+    "elements": [
+      {
+        "id": "carrinho-de-compra;buscar-e-adicionar-o-produto-no-carrinho",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Buscar e adicionar o produto no carrinho",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "que eu acesso o site do ecommerce",
+            "result": {
+              "status": "passed",
+              "duration": 9976000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "digito o nome de um produto no campo de busca",
+            "result": {
+              "status": "passed",
+              "duration": 1381000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "o produto será exibido na busca",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "eu clico no produto",
+            "result": {
+              "status": "passed",
+              "duration": 977000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "eu sou direcionado para a página do produto",
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "adiciono o produto ao carrinho",
+            "result": {
+              "status": "passed",
+              "duration": 864000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "recebo uma confirmação de que o produto foi adicionado com sucesso",
+            "result": {
+              "status": "passed",
+              "duration": 61000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
