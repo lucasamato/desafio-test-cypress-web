@@ -1,0 +1,25 @@
+
+{
+    "$schema": "https://raw.githubusercontent.com/cypress-io/cypress/develop/cli/schema/cypress.schema.json",
+    "baseUrl": "http://localhost/8080", 
+    "testFiles": "**/*.*spec.*", 
+    "experimentalSourceRewriting": false,
+    "watchForFileChanges": false,
+    "requestTimeout": 60000,
+    "responseTimeout": 120000,
+    "retries": {
+        "runMode": 3,
+        "openMode": 2
+    },
+    "chromeWebSecurity": false,
+    "defaultCommandTimeout": 40000,
+    "video": true,
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+        "configFile": "reporter-congif.json"
+    }
+        
+    
+}
+
+

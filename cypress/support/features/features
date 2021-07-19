@@ -1,6 +1,0 @@
-Feature buscar pelo produto e selecionar ao carrinho
-
-Dado que preciso comprar um produto
-Quando quando eu realiza uma busca
-E   seleciono o produto
-Então então ele é adicionado ao carrinho
