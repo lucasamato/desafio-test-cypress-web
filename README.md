@@ -2,9 +2,15 @@
 
 ## Test Strategy
 
-Os testes foram criadas utilizando a escrita Gherkim utilizando a prática do BDD com cucumber, para isso foi utilizada a biblioteca cypress-cucumber-preprocessor que permite a integração do cucumber com Cypress
+Os testes foram criados utilizando a escrita Gherkim utilizando a prática do BDD com cucumber, para isso foi utilizada a biblioteca cypress-cucumber-preprocessor que permite a integração do cucumber com Cypress.
+
+Documentação cypress-cucumber-preprocessor:
 
 https://www.npmjs.com/package/cypress-cucumber-preprocessor 
+
+## Mapa Mental
+
+
 ## Dependencies
 
 * Node
