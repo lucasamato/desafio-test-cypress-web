@@ -1,0 +1,73 @@
+[
+  {
+    "description": "    Como usuario do ecommerce, desejo buscar um produto para poder adicionalo ao carrinho",
+    "keyword": "Feature",
+    "name": "Campo de busca de produto",
+    "line": 1,
+    "id": "campo-de-busca-de-produto",
+    "tags": [],
+    "uri": "Campodebusca.feature",
+    "elements": [
+      {
+        "id": "campo-de-busca-de-produto;buscar-produto",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Buscar produto",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "que eu acesso o site do ecommerce",
+            "result": {
+              "status": "passed",
+              "duration": 5623000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "digito o nome de um produto no campo de busca",
+            "result": {
+              "status": "passed",
+              "duration": 1445000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "o produto será exibido na busca",
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "eu clico no produto",
+            "result": {
+              "status": "passed",
+              "duration": 2237000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "eu sou direcionado para a página do produto",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

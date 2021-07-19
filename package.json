@@ -1,16 +1,41 @@
 {
   "name": "desafio-test-cypress-web",
   "version": "1.0.0",
-  "description": "",
+  "description": "Deafio de automação Web utilizando Cypress",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cy:open": "cypress open"
+    "cy:open": "npx cypress open",
+    "cy:run": "npx cypress run",
+    "cy:open:cucumber": "npx cypress open --config-file cypress-cucumber.json",
+    "cy:run:cucumber": "npx cypress run --config-file cypress-cucumber.json --spec **/All.features",
+    "report:merge": "mochawesome-merge > full_report.json",
+    "report:mocha": "marge full_report.json",
+    "report:clean": "rm -rf mochawesome-report full_report.json"
+
   },
 
-  "author": "",
-  "license": "ISC",
+
+  "author": "Lucas Amato",
+  "license": "MIT",
   "devDependencies": {
-    "cypress": "^7.2.0"
+    "cucumber-html-reporter": "^5.4.0",
+    "cypress": "^7.2.0",
+    "cypress-cucumber-preprocessor": "4.1.4",
+    "cypress-multi-reporters": "^1.5.0",
+    "mocha": "^9.0.2",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson":{
+      "generate": true,
+      "outputFolder": "cypress/reports/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+
+    }
   }
 }
