@@ -13,8 +13,11 @@
 pipeline {
     //The agent section specifies where the entire Pipeline, or a specific stage, 
     //will execute in the Jenkins environment depending on where the agent section is placed.
-    agent any
-    
+  agent {
+    docker {
+      image "node:16-alpine"
+    }
+  }
     //The environment directive specifies a sequence of key-value pairs which will be defined
     //as environment variables for all steps, or stage-specific steps, depending on where the environment directive is located within the Pipeline.
     environment {
@@ -50,7 +53,7 @@ pipeline {
         
         stage('Testing') {
             steps {
-                sh "npm install -g npm"
+                
                 sh "npm install -g npm"
                 sh "npx cypress run --browser ${BROWSER}"
             }
