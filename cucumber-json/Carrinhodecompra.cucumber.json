@@ -23,7 +23,7 @@
             "name": "que eu acesso o site do ecommerce",
             "result": {
               "status": "passed",
-              "duration": 9099000000
+              "duration": 13774000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "digito o nome de um produto no campo de busca",
             "result": {
               "status": "passed",
-              "duration": 1532000000
+              "duration": 1921000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "eu clico no produto",
             "result": {
               "status": "passed",
-              "duration": 1118000000
+              "duration": 1021000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "eu sou direcionado para a página do produto",
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 13000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "adiciono o produto ao carrinho",
             "result": {
               "status": "passed",
-              "duration": 958000000
+              "duration": 1937000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "recebo uma confirmação de que o produto foi adicionado com sucesso",
             "result": {
               "status": "passed",
-              "duration": 58000000
+              "duration": 38000000
             }
           }
         ]
