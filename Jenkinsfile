@@ -55,7 +55,7 @@ pipeline {
           steps {
                 
              
-                sh "npx cypress run --browser ${BROWSER}"
+                sh "npm run cy:run --browser ${BROWSER}"
             }
         }
         
