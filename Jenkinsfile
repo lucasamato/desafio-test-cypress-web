@@ -54,7 +54,7 @@ pipeline {
           }  
           steps {
                 
-                sh "npm install -g npm"
+             
                 sh "npx cypress run --browser ${BROWSER}"
             }
         }
