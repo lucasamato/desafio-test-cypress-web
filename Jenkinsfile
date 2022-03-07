@@ -53,7 +53,7 @@ pipeline {
               docker {image 'cypress/base:10'}
           }  
           steps {
-                
+                sh "npm install -D"
              
                 sh "npm run cy:run --browser ${BROWSER}"
             }
