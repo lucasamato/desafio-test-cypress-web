@@ -81,7 +81,7 @@ pipeline {
             
             //publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'cypress/reports', reportFiles: 'index.html', reportName: 'HTML_20Report', reportTitles: ''])
           publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'cypress/reports', reportFiles: 'index.html', reportName: 'HTML_Report', reportTitles: ''])  
-          deleteDir()
+         
         }
     }
 }
