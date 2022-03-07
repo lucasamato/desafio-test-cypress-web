@@ -23,7 +23,7 @@
             "name": "que eu acesso o site do ecommerce",
             "result": {
               "status": "passed",
-              "duration": 11245000000
+              "duration": 6566000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "digito o nome de um produto no campo de busca",
             "result": {
               "status": "passed",
-              "duration": 2973000000
+              "duration": 1934000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "o produto será exibido na busca",
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 4000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "eu clico no produto",
             "result": {
               "status": "passed",
-              "duration": 6442000000
+              "duration": 1843000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "eu sou direcionado para a página do produto",
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 15000000
             }
           }
         ]
