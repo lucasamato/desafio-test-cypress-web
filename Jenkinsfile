@@ -57,8 +57,8 @@ pipeline {
                 sh "npm ci"
                 //sh "npm run cy:run --browser ${BROWSER}"
                 //sh "npm run report:jenkins"
-                sh "npm cy:run:cucumber --browser ${BROWSER}"
-                sh "npm report:cucumber"
+                sh "npm run cy:run:cucumber --browser ${BROWSER}"
+                sh "npm run report:cucumber"
             }
         }
         
