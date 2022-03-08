@@ -55,8 +55,10 @@ pipeline {
           steps {
                // sh "npm install -D"
                 sh "npm ci"
-                sh "npm run cy:run --browser ${BROWSER}"
-                sh "npm run report:jenkins"
+                //sh "npm run cy:run --browser ${BROWSER}"
+                //sh "npm run report:jenkins"
+                sh "npm cy:run:cucumber --browser ${BROWSER}"
+                sh "npm report:cucumber"
             }
         }
         
@@ -85,7 +87,7 @@ pipeline {
          publishHTML (target : [allowMissing: false,
            alwaysLinkToLastBuild: true,
            keepAll: true,
-           reportDir: 'mochawesome-report',
+           reportDir: 'cypress/reports',
            reportFiles: 'index.html',
            reportName: 'My Reports',
            reportTitles: 'The Report'])
