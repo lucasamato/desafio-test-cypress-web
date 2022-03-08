@@ -54,6 +54,7 @@ pipeline {
           
           steps {
                 sh "npm install -D"
+                sh "npm ci"
                 sh "npm run cy:run --browser ${BROWSER}"
                 sh "npm run report:jenkins"
             }
