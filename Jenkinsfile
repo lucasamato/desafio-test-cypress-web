@@ -62,7 +62,7 @@ pipeline {
             }
         }
         
-        stage('Deploy'){
+        stage('Deploy em PROD'){
             steps {
                 echo "Deploying"
             }
