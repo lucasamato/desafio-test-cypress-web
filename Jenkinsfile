@@ -29,6 +29,8 @@ pipeline {
     parameters {
         //string(name: 'SPEC', defaultValue: 'cypress/integration/**/**', description: 'Ej: cypress/integration/pom/*.spec.js')
         choice(name: 'BROWSER', choices: ['chrome', 'edge', 'firefox'], description: 'Pick the web browser you want to use to run your scripts')
+        choice(name: 'AMBIENTE', choices: ['QA', 'SANDBOX', 'PROD'], description: 'Selecione o ambiente')
+
     }
     
     //The options directive allows configuring Pipeline-specific options from within the Pipeline itself.
@@ -57,7 +59,7 @@ pipeline {
                 sh "npm ci"
                 //sh "npm run cy:run --browser ${BROWSER}"
                 //sh "npm run report:jenkins"
-                sh "npm run cy:run:cucumber --browser ${BROWSER}"
+            sh "npm run cy:run:cucumber --browser ${BROWSER} --env configFile=${AMBIENTE}"
                 sh "npm run report:cucumber"
             }
         }
