@@ -26,12 +26,12 @@ pipeline {
     //The parameters directive provides a list of parameters that a user should provide when triggering the Pipeline.
     //The values for these user-specified parameters are made available to Pipeline steps via the params object, see
     //the Parameters, Declarative Pipeline for its specific usage.
-   // parameters {
+    parameters {
         //string(name: 'SPEC', defaultValue: 'cypress/integration/**/**', description: 'Ej: cypress/integration/pom/*.spec.js')
-     //   choice(name: 'BROWSER', choices: ['chrome', 'edge', 'firefox'], description: 'Pick the web browser you want to use to run your scripts')
+       choice(name: 'BROWSER', choices: ['chrome', 'edge', 'firefox'], description: 'Pick the web browser you want to use to run your scripts')
      //   choice(name: 'AMBIENTE', choices: ['QA', 'SANDBOX', 'PROD'], description: 'Selecione o ambiente')
 
-    //}
+    }
     
     //The options directive allows configuring Pipeline-specific options from within the Pipeline itself.
     //Pipeline provides a number of these options, such as buildDiscarder, but they may also be provided by
@@ -45,12 +45,12 @@ pipeline {
     //in one or more stage directives.
     stages {
         
-       // stage('Build'){
-            //The steps section defines a series of one or more steps to be executed in a given stage directive.
-         //   steps {
-          //      echo "Building the application"
-         //   }
-      ////  }
+       stage('Build'){
+          //The steps section defines a series of one or more steps to be executed in a given stage directive.
+          steps {
+              echo "Building the application"
+         }
+    }
         
         stage('Testing') {
           
@@ -61,6 +61,13 @@ pipeline {
                 //sh "npm run report:jenkins"
             sh "npm run cy:run:cucumber --browser ${BROWSER} --env configFile=${AMBIENTE}"
                 sh "npm run report:cucumber"
+            }
+        }
+      
+          stage('RFC') {
+          
+          steps {
+                echo "RFC"
             }
         }
         
